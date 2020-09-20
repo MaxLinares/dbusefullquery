@@ -1,0 +1,7 @@
+-- Begin sql transactions
+BEGIN TRANSACTION
+SET IDENTITY_INSERT [dbo].[FirstComTable] ON
+INSERT INTO [dbo].[FirstComTable] ([ID], [FirstName], [LastName], [Address]) VALUES (6, N'DDD', N'EEE', N'FFF')
+
+SET IDENTITY_INSERT [dbo].[FirstComTable] OFF
+COMMIT TRANSACTION
